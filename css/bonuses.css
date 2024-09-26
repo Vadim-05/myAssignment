@@ -1,0 +1,644 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{	
+	font-family: Poppins;
+}
+.header{
+	width: 100%;
+	background: rgba(25, 42, 50, 1);
+}
+.header_mobile{
+    justify-content: space-between;
+    width: 360px;
+    margin: 0 auto;
+    height: 79px;
+    display: flex;
+    align-items: center;
+}
+.header__logo{
+    width: 120px;
+    height: 55px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background: rgba(20, 30, 85, 1);
+}
+.header_menu-toggle {
+    cursor: pointer;
+    filter: invert(100%);
+}
+.header_mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -100%; 
+    width: 250px;
+    height: 100%;
+    background-color: #fff;
+    transition: right 0.3s ease; 
+    z-index: 1000;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+}
+.header_mobile-menu ul {
+    padding: 20px;
+}
+.header_mobile-menu ul li {
+    margin: 20px 0;
+}
+.header_mobile-menu.active {
+    right: 0;
+}
+.header__close-menu{
+	position: absolute;
+    right: 13px;
+    top: 13px;
+    width: 26px;
+    filter: brightness(0) invert(1);
+}
+.header__menu{
+    display: flex;
+    justify-content: space-between;
+    width: 148px;
+    flex-direction: column;
+}
+.header__menu-item{
+    list-style-type: none;
+}
+.header__menu-link{
+    background: rgba(26, 55, 105, 1);
+    border-radius: 16px;
+    padding: 0 11px;
+    text-decoration: none;
+    color: white;
+    height: 48px;
+    display: flex;
+    align-items: center;
+}
+.header__menu-img{
+    margin-right: 10px;
+}
+.header__auth-links{
+	display: flex;
+	justify-content: center;
+}
+.header__auth-link{
+	width: 98px;
+	height: 48px;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 16px;
+	font-size: 16px;
+	font-weight: 600;
+	color: white;
+}
+.header__auth-link--signup{
+	background: rgba(236, 98, 43, 1);
+}
+.header__auth-link--login{
+	background: rgba(15, 168, 16, 1);
+	margin-left: 10px;
+}
+.header_descktop{
+	display: none;
+}
+.header__container{
+    width: 740px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    height: 134px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.header__language-select {
+    position: relative;
+    width: 250px;
+	width: 109px;
+	background: rgba(26, 55, 105, 1);
+	border-radius: 16px;
+	height: 48px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+}
+.main{
+	background: rgba(20, 30, 85, 1);
+	padding-top: 20px;
+}
+.main_section{
+	display: flex;
+	width: 360px;
+	justify-content: space-between;
+	margin: 0 auto;
+    flex-direction: column-reverse;
+}
+.sign-up{
+	background: rgba(236, 98, 43, 1);
+	border: 1px solid rgba(255, 255, 255, 1);
+	width: 214px;
+	height: 48px;
+	font-size: 16px;
+	font-weight: 600;
+	color: white;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 16px;
+}
+.bonus_container{
+	background: white;
+	height: fit-content;
+	margin-bottom: 20px;
+	border-radius: 6px;
+	padding: 32px 20px;
+	box-sizing: border-box;
+}
+.bonus_container_title{
+	font-size: 28px;
+	font-weight: 700;
+	line-height: 57.6px;
+}
+.bonus_container_text{
+	font-size: 16px;
+	line-height: 24px;
+	padding-top: 24px;
+}
+.bonus_container_categories{
+	height: fit-content;
+	background: white;
+	display: flex;
+	margin-bottom: 20px;
+	flex-direction: column;
+	align-items: center;
+	border-radius: 6px;
+	padding: 32px 15px 32px 15px;
+}
+.bonus_container_category_title{
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 48px;
+}
+.bonus_container_category_text{
+	font-size: 16px;
+	line-height: 24px;
+	padding: 16px 0 24px 0;
+}
+.main_backround_bonus{
+	background-image: url('../img/backroundBonus.png');
+	padding: 42px 0 47px 26px;
+	margin-bottom: 20px;
+	border-radius: 6px;
+}
+.main_terms{
+	font-size: 6px;
+	color: white;
+    padding: 10px 0 0 57.5px;
+}
+.backround_nav{
+	font-size: 16px;
+	line-height: 24px;
+	color: white;
+	text-decoration: none;
+}
+.backround_nav_bonuses{
+	padding-left: 15px;
+    border-left: 1px solid;
+    margin-left: 15px;
+}
+.main_backround_bonus_title{
+	font-size: 25px;
+	font-weight: 700;
+	line-height: 40px;
+	color: white;
+	width: 322px;
+	padding: 4px 0 16px 0;
+}
+.casino-options__button.active{
+	background: rgba(255, 255, 255, 1);
+	border: none;
+	border-top:4px solid rgba(46, 147, 68, 1);
+}
+.sportsbook-review{
+	background: white;
+	padding: 32px 20px 0 20px;
+	box-sizing: border-box;
+	border-radius: 6px;
+    margin: 20px 0;
+}
+.sportsbook-review__title{
+	font-size: 28px;
+	font-weight: 700;
+	line-height: 57.6px;
+	padding-bottom: 24px;
+}
+.sportsbook-review__paragraph{
+	font-size: 16px;
+	line-height: 24px;
+	padding-bottom: 20px;
+}
+.custom-list {
+	padding-left: 18px;
+    list-style-type: none;   
+}
+.custom-list-item{
+	font-size: 16px;
+	line-height: 24px;
+	position: relative;
+	padding-bottom: 24px;
+}
+.text-content{
+	font-size: 16px;
+	line-height: 24px;
+	padding-bottom: 32px;
+}
+.button--signup{
+	cursor: pointer;
+	background: rgba(236, 98, 43, 1);
+	width: 127px;
+	height: 48px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	border: none;
+	border-radius: 16px;
+	font-size: 16px;
+	font-weight: 600;
+}
+.faq{
+	background: white;
+	margin: 20px 0;
+	border-radius: 6px;
+	padding: 30px 20.5px 14px 20.5px;
+}
+.faq__accordion{
+	cursor: pointer;
+	margin-bottom: 16px;
+}
+.faq__title{
+	font-size: 28px;
+	font-weight: 700;
+	line-height: 57.6px;
+	padding-bottom: 32px;
+}
+.faq__accordion-header{
+	height: 64px;
+	border: 1px solid rgba(119, 119, 119, 0.5);
+	padding: 20px;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;	
+}
+.faq__accordion-question{
+	font-size: 16px;
+	font-weight: 600;
+}
+.faq__accordion-icon--rotated {
+    transform: rotate(180deg);
+}
+.faq__accordion-content {
+    max-height: 0; 
+    overflow: hidden;
+    transition: max-height 0.3s ease; 
+    background: rgba(223, 232, 246, 1);
+    padding: 0 12px; 
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.faq__accordion-content--active {
+    max-height: 300px; 
+    padding: 16px 12px;
+}
+
+.section_live-events{
+	width: 360px;
+	display: flex;
+	justify-content: space-between;
+    padding-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.live-events{
+	width: 360px;
+	background: rgba(25, 42, 50, 1);
+	border-radius: 6px;
+	padding-top: 20px;
+	box-sizing: border-box;
+	height: fit-content;
+}
+.event-button{
+	border: none;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: rgba(236, 98, 43, 1);
+	width: 251px;
+	height: 48px;
+	border-radius: 60px;
+	color: white;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+    padding: 0 16px 0 4px;
+    margin: 0 auto;
+}
+.events-list{
+	padding-top: 24px;
+	margin-top: 20px;
+	padding-bottom: 20px;
+	background: white;
+}
+.event-item{
+	list-style-type: none;
+}
+.active > .event-link{
+	color: white;
+}
+.event-link{
+	height: 40px;
+	display: flex;
+	align-items: center;
+	padding-left: 12px;
+	text-decoration: none;
+	color: rgba(124, 124, 124, 1);
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	text-align: justified;
+	margin-bottom: 4px;
+}
+.event-icon{
+	margin-right: 12px;
+}
+.casino{
+    background: white;
+    border-radius: 7px;
+    width: 400px;
+    margin-top: 20px;
+    height: fit-content	;
+}
+.casino__title{
+	background: rgba(25, 42, 50, 1);
+	color: white;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 6px;
+}
+.casino__logos{
+	display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 20px 12px 20px 12px;
+}
+.casino__logo-image{
+	margin-bottom: 10px;
+}
+.footer{
+	margin: 0 auto;
+	background: rgba(20, 30, 85, 1);
+}
+.footer__section{
+	width: 360px;
+	margin: 0 auto;
+}
+.footer__disclaimer{
+    padding: 32px 0 26px 0;
+}
+.footer__logo--secondary{
+	background: rgba(20, 30, 85, 1);
+	width: 155px;
+	height: 55px;
+	font-size: 32px;
+	line-height: 40.96px;
+	text-align: left;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.footer__logo--main{
+	background: rgba(20, 30, 85, 1);
+	width: 120px;
+	height: 55px;
+	color: white;
+	font-size: 32px;
+	line-height: 40.96px;
+	text-align: left;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.footer__logos{
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer__text{
+	font-size: 16px;
+	line-height: 24px;
+	padding-bottom: 20px;
+}
+.footer__content{
+	background: white;
+	padding: 35px 20px 37px 20px;
+	box-sizing: border-box;
+}
+.footer__description{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+}
+.custom-list-ol{
+	padding-left: 20px;
+}
+.custom-list li::before {
+	position: absolute;
+	left: -10px;
+    content: "-"; 
+}
+.options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    z-index: 1000;
+    display: none; 
+}
+.option {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    background: rgba(26, 55, 105, 1);
+}
+.option:hover {
+    background-color: #f0f0f0; 
+}
+.active {
+    background: rgba(25, 42, 50, 1);
+    color: white;
+}
+@media screen and (min-width: 768px){
+	.main_backround_bonus_title{
+		width: 512px;
+	}
+	.header_mobile{
+		display: none;
+	}
+	.bonus_container_categories{
+		padding: 32px 124px 32px 53px;
+	}
+	.header_descktop{
+		display: block;
+	}
+    .header__menu{
+    	flex-direction: row;
+        width: 487px;
+    }
+	.main_section{
+		width: 740px;
+    }
+    .bonus_container_title,
+    .sportsbook-review__title{
+    	font-size: 38px;
+    }
+    .sportsbook-review{
+    	margin-top: 0;
+    }
+    .faq__title{
+    	font-size: 38px;
+    }
+    .section_live-events{
+    	width: 740px;
+    }
+    .live-events{
+    	width: 295px;
+    }
+    .casino{
+    	width: 400px;
+    }
+    .footer__logo--secondary{
+    	width: 253px;
+    }
+    .footer__logo--main{
+    	width: 151px;
+    }
+    .footer__text{
+    	width: 578px;
+    	padding-bottom: 0;
+    }
+    .footer__description{
+    	flex-direction: row;
+    }
+    .footer__section{
+    	width: 740px;
+    }
+}
+@media screen and (min-width: 1024px){
+	.bonus_container_categories{
+		flex-direction: row;
+	}
+	.main_backround_bonus_title{
+		font-size: 48px;
+		width: 629px;
+		line-height: 57.6px;
+	}
+	.bonus_container_category{
+		padding: 13px 0 0 102px;
+	}
+	.header__container{
+        width: 987px;
+        height: 80px;
+    }
+    .main_section{
+    	width: 987px;
+    	flex-direction: row;
+    }
+    .sportsbook-review{
+    	padding-bottom: 32px;
+    	margin-bottom: 20px;
+    }
+	.faq__title{
+		font-size: 48px;
+	}
+	.section_live-events{
+		width: 275px;
+		display: block;
+	}
+	.live-events{
+		width: 275px;
+	}
+	.casino{
+		width: 275px;
+	}
+	.footer__text{
+		width: 500px;
+	}
+	.footer__section{
+		width: 987px;
+	}
+}
+@media screen and (min-width: 1440px){
+	.header__container{
+		width: 1240px;
+	}
+	.header__menu{
+		width: 635px;
+	}
+	.header__menu-link{
+		padding: 0 24px;
+	}
+	.header__language-select{
+	    width: 131px;
+	}
+	.header__auth-link--signup{
+		width: 127px;
+	}
+	.header__auth-link--login{
+		width: 117px;
+		margin-left: 16px;
+	}
+	.main_section{
+		width: 1240px;
+	}
+	.sportsbook-review{
+		margin-bottom: 20px;
+	}
+	.bonus_container_title,
+	.sportsbook-review__title{
+		font-size: 48px;
+	}
+	.section_live-events{
+		width: 295px;
+	}
+	.live-events{
+		width: 295px;
+	}
+	.footer__text{
+		width: 782px;
+	}
+	.footer__section{
+		width: 1240px;
+	}
+}
